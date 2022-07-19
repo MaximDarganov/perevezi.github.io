@@ -15,6 +15,75 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 //# sourceMappingURL=jquery.min.map</script>
         
         <style>
+		
+        table {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            font-size: 14px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        th,
+        td:first-child {
+            background: #0b7ee3;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        th,
+        td {
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            border-color: white;
+        }
+        
+        td {
+            background: #D8E6F3;
+        }
+        
+        th:first-child,
+        td:first-child {
+            text-align: left;
+        }
+        
+        .accordion {
+            background-color: rgb(60, 148, 255);
+            color: rgb(254, 254, 254);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: rgb(213, 13, 13);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    
             .modal_bg {
               display: flex;
               justify-content: center;
@@ -1092,17 +1161,17 @@ $(function(){
                             <div class="logo">
                               
                                                 
-                                                    <div class="logo_text"><strong><span style="font-size:36px;"><span style="font-family:montserrat;">YourLogo</span></span></strong></div>
+                                                    <div class="logo_text"><strong><span style="font-size:36px;"><span style="font-family:montserrat;">Perevoz.ru</span></span></strong></div>
                                                 
                                             
                             </div>
-                            <div class="menu1 menu_block animate_menu1" style="color:#333; background-color:#fff; font-size: 16px"><ul><li class="level0"><a href="#a_1691350" title="Главная">Главная</a></li><li class="level0"><a href="#a_1691387" title="О компании">О компании</a></li><li class="level0"><a href="#a_1691400" title="Почему мы">Почему мы</a></li><li class="level0"><a href="#a_1693999" title="Отзывы">Отзывы</a></li><li class="level0"><a href="#a_1691514" title="Преимущества">Преимущества</a></li><li class="level0"><a href="#a_1691508" title="Галерея">Автопарк</a></li><li class="level0"><a href="#a_1691472" title="Контакты">Контакты</a></li></ul></div>
+                            <div class="menu1 menu_block animate_menu1" style="color:#333; background-color:#fff; font-size: 16px"><ul><li class="level0"><a href="#a_1691350" title="Главная">Главная</a></li><li class="level0"><a href="#a_1691387" title="О компании">О компании</a></li><li class="level0"><a href="#a_1691400" title="Почему мы">Маршруты и расписание</a></li><li class="level0"><a href="#a_1693999" title="Отзывы">Отзывы</a></li><li class="level0"><a href="#a_1691514" title="Преимущества">Преимущества</a></li><li class="level0"><a href="#a_1691508" title="Галерея">Автопарк</a></li><li class="level0"><a href="#a_1691472" title="Контакты">Контакты</a></li></ul></div>
                         </div>
                         
                     </div>
                 </div>
 
-<div data-autoslide="0" class=" size_450x350  no_fontsize hide_line     section             section155 " data-hcolor="#5d5d5d" style="background-color:#FFFFFF;  background-image:url(/img/1920x0/5c141b88eb9d01a6eb8d1c799ed295d2.jpg); padding-top:40px; padding-bottom:30px;" data-id="1730919" id="b_1730919"><a name="a_1691350"></a>
+<div data-autoslide="0" class=" size_450x350  no_fontsize hide_line     section             section155 " data-hcolor="#5d5d5d" style="background-color:#FFFFFF;  background-image:url(img/imgsh.jpg); padding-top:40px; padding-bottom:30px;" data-id="1730919" id="b_1730919"><a name="a_1691350"></a>
 							<div class="dark"></div>
 								
 							   
@@ -1164,7 +1233,7 @@ $(function(){
 								  
 									<div class="arr1 ">
 										
-											<div data-link="" class="image1 bottom_left   size_700x500 "><img  data-lazy='1' data-src="/img/700x500/f9de96ba6e23dc553ef30f152a9a293e.jpg" alt=""></div>
+											<div data-link="" class="image1 bottom_left   size_700x500 "><img  data-lazy='1' alt src="img/imgopa.jpg" alt=""></div>
 												
 										<div class="right bottom_left    size_700x500">
 											<div class="bg_right" style="opacity:1; background: #f5f5f5;"></div>
@@ -1416,10 +1485,93 @@ $(function(){
                                                             <div class="noise" style="background-image:url(/img/natural-paper.png);"></div>
                                                            <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
                                                             <div class="section_inner">
-								<div class="title"><p style="text-align:left">ПАССАЖИРСКИЕ ПЕРЕВОЗКИ</p><p style="text-align:left"><span style="font-size:42px"><span style="color:#000000"><strong><span style="font-family:montserrat">ЗДЕСЬ БУДЕТ ВИДЕО</span></strong></span></span></p></div> 
+								<div class="title"><p style="text-align:left">ПАССАЖИРСКИЕ ПЕРЕВОЗКИ</p><p style="text-align:left"><span style="font-size:42px"><span style="color:#000000"><strong><span style="font-family:montserrat">Маршруты и расписание</span></strong></span></span></p></div> 
 								<div class="sub_title"><p style="text-align:left"><br></p></div>
-								<div class="video "><iframe allowfullscreen="" src="https://www.youtube.com/embed/oltXu_EwdDI"></iframe></div> 
-							</div>
+
+    
+
+    <h2>Доступные Направления:
+    </h2>
+    <p> ...</p>
+    <button class="accordion">Краснодар</button>
+    <div class="panel">
+        <p>
+            <table>
+                <tr>
+                    <th>Время</th>
+                    <th>Стоимость</th>
+
+                    <tr>
+                        <td>08:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+
+            </table>
+        </p>
+    </div>
+
+    <button class="accordion">Волгоград</button>
+    <div class="panel">
+        <p>
+            <table>
+                <tr>
+                    <th>Время</th>
+                    <th>Стоимость</th>
+
+                    <tr>
+                        <td>18:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+                    <tr>
+                        <td>22:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+                    <tr>
+                        <td>06:00</td>
+                        <td>2500р</td>
+
+                    </tr>
+
+            </table>
+        </p>
+    </div>
+
+    <button class="accordion">Примечание</button>
+    <div class="panel">
+        <p>Вы можете забронировать билет каждый день, без перерыва и выходных.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
 						</div>
 
 <div data-hcolor="#ca2d2a" class="size_700x500 hide_line    section             section1127 " style="background-color:#ffffff;  background-image:url(/img/1920x0/null.png); padding-top:40px; padding-bottom:60px;" data-id="1730924" id="b_1730924"><a name="a_1691482"></a>
@@ -1431,12 +1583,12 @@ $(function(){
 								  
 									<div class="arr1 ">
 										
-											<div data-link="" class="image1 top_left_deep   size_700x500 "><img  data-lazy='1' data-src="/img/700x500/553879bf9054ebc741929fb25cc780d6.jpg" alt=""></div>
+											<div data-link="" class="image1 top_left_deep   size_700x500 "><img  data-lazy='1' alt src="img/epta3.png" alt=""></div>
 												
 										<div class="right top_left_deep    size_700x500">
 											<div class="bg_right" style="opacity:1; background: #f9f9f9;"></div>
-											 <div class="title1"><span style="color:#000000"><span style="font-size:32px"><strong><span style="font-family:montserrat">КАКОЙ - НИБУДЬ ТЕЗИС</span></strong></span></span></div>
-											 <div class="txt1"> <p><span style="color:#444444">Продолжение описания компании нужно вставить сюда тем же шрифтом и тем же размером текста.&nbsp;Продолжение описания компании нужно вставить сюда тем же шрифтом и тем же размером текста.</span></p></div> 
+											 <div class="title1"><span style="color:#000000"><span style="font-size:32px"><strong><span style="font-family:montserrat">Краснодар-Волгоград</span></strong></span></span></div>
+											 <div class="txt1"> <p><span style="color:#444444">Новый маршрут Волгоград- Краснодар это отличная возможность путешествовать без сомнений. Наша главная задача это ваш комфорт, безопасность и пунктуальность..</span></p></div> 
 												<div class=" hidden btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;  font-size: 14px;  font-family: Verdana, Geneva, sans-serif; ">УЗНАТЬ ПОДРОБНЕЕ</div>
 												
 												
@@ -1485,7 +1637,7 @@ $(function(){
                                                             <div class="section_inner  ">
 								
 								
-								<div class="text" style=" "><p>Если у вас есть возможность увидеть только один город в Италии, то пусть это будет Рим, великий, многогранный, одновременно шумный и уютный, узнаваемый и не до конца известный. Ехать на 2-3 дня сюда, если вы едете впервые и в город, и в страну, — не самая лучшая идея. Неделя — вот то количество времени, которое можно считать адекватным.</p><p><br></p><p>Планируя свои дни в городе, пожалуйста, отведите достаточно времени на то, чтобы увидеть не только Колизей, Испанскую лестницу, площадь Навона и обалдеть от красоты и количества туристов, но и для того, чтобы познакомиться с другим, жилым, спокойным, но не менее красивым Римом.&nbsp;</p><p><br></p></div>
+								<div class="text" style=" "><p>.</p><p><br></p></p></div>
 							</div>
 						</div>
 
@@ -1495,462 +1647,7 @@ $(function(){
 								<div class="noise" style="background-image:url(/img/natural-paper.png);"></div>
 								<div class="noise_new " style="background-image:url(/img/bg_13.png); opacity:0.5;"></div>
 								<div class="section_inner all_border  ">
-								<div class="title"><p style="text-align:left"><span style="font-size:28px"><span style="color:#000000"><span style="font-family:montserrat">ЗДЕСЬ ВЫ НАЙДЕТЕ</span></span></span></p><p style="text-align:left"><span style="font-size:42px"><span style="color:#000000"><span style="font-family:montserrat"><strong>ПОПУЛЯРНЫЕ УСЛУГИ</strong></span></span></span></p></div> 
-								<div class="sub_title"></div>
-								<div class="catalog_items count4 s200">
-								<div class="filter_btns "><button id="descending" data-sort_dir="to_min">Сначала дорогие</button><button id="аscending" data-sort_dir="to_max">Сначала дешевые</button></div>
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/3a1ebc3ac75c8f1eade976dc4a5f86fc.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="font-size:20px;"><span style="color:#444444">Ceal Eames DSW Hat</span></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">2 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/3a1ebc3ac75c8f1eade976dc4a5f86fc.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/c38ed93e991f7ea2a15be794bdc99382.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="color:#444444"></span><span style="font-size:20px"><span style="color:#444444">Ceal Eames DSW Hat</span></span><span style="color:#444444"></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">3 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/c38ed93e991f7ea2a15be794bdc99382.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6082.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/b01fec0e41cd7c7632ab364519cf6d30.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="color:#444444"></span><span style="font-size:20px"><span style="color:#444444">Ceal Eames DSW Hat</span></span><span style="color:#444444"></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">3 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/b01fec0e41cd7c7632ab364519cf6d30.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/eba198964f739128c4acf5e5309935fb.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="color:#444444"></span><span style="font-size:20px"><span style="color:#444444">Ceal Eames DSW Hat</span></span><span style="color:#444444"></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">3 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/eba198964f739128c4acf5e5309935fb.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6082.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/ae0e214729d622db94e04fc18d321398.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="font-size:20px;"><span style="color:#444444">Ceal Eames DSW Hat</span></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">2 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/ae0e214729d622db94e04fc18d321398.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/529cbd2e2013973a6b162c6bfdf06a88.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="font-size:20px;"><span style="color:#444444">Ceal Eames DSW Hat</span></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">2 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/529cbd2e2013973a6b162c6bfdf06a88.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/f14404d953341e6481f77f689aa74817.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="font-size:20px;"><span style="color:#444444">Ceal Eames DSW Hat</span></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">2 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/f14404d953341e6481f77f689aa74817.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.5; background: #ffffff;"></div>
-											
-											<div data-link="" class="image1  s200   show_extra_info "><img  data-lazy='1' data-src="/img/400x400/507753fc924adc9c62f2dad4923ffe90.jpg" alt=""></div>
-											
-											
-											
-											
-											
-											<div class="title1"><p><span style="font-size:20px;"><span style="color:#444444">Ceal Eames DSW Hat</span></span></p></div>
-											 <div class="txt1"> <p>Цвет: на заказ.</p><p>Габариты: 25*90*120</p><p>Доставка: бесплатно</p></div> 
-											<div class="price1">2 500 руб.</div>
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Заказать</div>
-												<div class="product_card" data-id="0">Редактировать карточку товара</div>
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s200">
-													<div class="close">Х</div>
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/507753fc924adc9c62f2dad4923ffe90.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_6081.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_6137.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Заказать</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
 								
-									<div class="popup_thanks">
-                        <div class="popup_thanks_inner">
-                            <div class="popup_thanks_close">X</div>
-                            <div class="popup_thanks_title">Спасибо за заявку!</div>
-                            <div class="popup_thanks_text">Заявка отправлена. Наш менеджер свяжется с Вами в ближайшее время.</div>
-                        </div>
-                    </div>
-                
-							</div>
-							</div>
-						</div>
 
 <div class="hide_line  section    square        section143   hold_text  " style="background-color:#fff;  background-image:url(/img/1920x0/null.png); padding-top:60px; padding-bottom:60px;" data-id="1730927" id="b_1730927"><a name="a_1691508"></a>
                         
@@ -1971,66 +1668,66 @@ $(function(){
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/fc1ba4750de1b4dc61ff651d167f5acc.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img1.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Volkswagen Caravelle</div>
+													<div class="overlay_image_descr">Один из самых практичных вариантов.Имеет множество вариантов трансформации и может применяться как полноценный мобильный офис.</div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/a05c422829228c0955431329b183a3f5.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img3.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Mersedes-Benz Vito</div>
+													<div class="overlay_image_descr">Мерседес Вито одновременно является компактным и вместительным транспортом. Он способен перевозить сразу 2 семьи или большой объем груза.</div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/d196aec4cafbdbab5a2b306e0d437332.png" alt="">
+												<img  data-lazy='1' alt src="img/img8.jpeg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Toyota Majesty</div>
+													<div class="overlay_image_descr">Здесь четыре ряда на десять посадочных мест, «кожаная» обивка, вставки «под дерево» и девять подушек безопасности, включая занавески во всю длину салона. Самые роскошные места — на втором ряду)</div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/2b0eec0cbbf04fe895d75748ca42c7ee.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img9.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Volkswagen Multivan</div>
+													<div class="overlay_image_descr">Multivan является премиальной версией микроавтобуса Transporter.то отличная вместительная машина, которая у нас используется с водителем для семейных и рабочих задач.</div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/d640d87ec64ac09cac9fabf22d815bd9.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img4.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Ford Tourneo Connect</div>
+													<div class="overlay_image_descr">«Легковой» дизайн, экономичный двигатель и практичный салон.Что еще нужно?</div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/03d47796c8eec471c60d5d697f97c824.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img7.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Временно недоступен</div>
+													<div class="overlay_image_descr"></div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/f6c46b38a25fd1d4b2ee3f6eb15d5dbc.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img5.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Временно недоступен</div>
+													<div class="overlay_image_descr"></div>
 												</div>
 											</div>
 									  
 											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' data-src="/img/600x450/82150da9e4adf9a45c4d986c55cb5d3e.jpg" alt="">
+												<img  data-lazy='1' alt src="img/img6.jpg" alt="">
 												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Название проекта</div>
-													<div class="overlay_image_descr">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+													<div class="overlay_image_title">Временно недоступен</div>
+													<div class="overlay_image_descr"></div>
 												</div>
 											</div>
 									
@@ -2266,7 +1963,7 @@ $(function(){
                                                             <div class="section_inner  ">
 								
 								
-								<div class="text" style=" "><p>Если у вас есть возможность увидеть только один город в Италии, то пусть это будет Рим, великий, многогранный, одновременно шумный и уютный, узнаваемый и не до конца известный. Ехать на 2-3 дня сюда, если вы едете впервые и в город, и в страну, — не самая лучшая идея. Неделя — вот то количество времени, которое можно считать адекватным.</p><p><br></p><p>Планируя свои дни в городе, пожалуйста, отведите достаточно времени на то, чтобы увидеть не только Колизей, Испанскую лестницу, площадь Навона и обалдеть от красоты и количества туристов, но и для того, чтобы познакомиться с другим, жилым, спокойным, но не менее красивым Римом.&nbsp;</p><p><br></p></div>
+								<div class="text" style=" "><p></p><p><br></p><p>&nbsp;</p><p><br></p></div>
 							</div>
 						</div>
 
