@@ -16,6 +16,17 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
         
         <style>
 		
+        button {
+            border: 2px solid #0b7ee3;
+            background: #99cefc;
+            padding: 5px 20px;
+            border-radius: 5px;
+        }
+        
+        .zakaz {
+            background: #D8E6F3;
+        }
+        
         table {
             font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
             font-size: 14px;
@@ -27,7 +38,8 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
         td:first-child {
             background: #0b7ee3;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 50px;
+            border-radius: 5px;
         }
         
         th,
@@ -47,7 +59,7 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
         }
         
         .accordion {
-            background-color: rgb(60, 148, 255);
+            background-color: rgb(74, 152, 248);
             color: rgb(254, 254, 254);
             cursor: pointer;
             padding: 18px;
@@ -61,24 +73,24 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
         
         .active,
         .accordion:hover {
-            background-color: #ccc;
+            background-color: rgb(157, 203, 253);
         }
         
         .accordion:after {
-            content: '\002B';
-            color: rgb(213, 13, 13);
+            content: '\2193';
+            color: rgb(8, 1, 90);
             font-weight: bold;
             float: right;
             margin-left: 5px;
         }
         
         .active:after {
-            content: "\2212";
+            content: "\2191";
         }
         
         .panel {
             padding: 0 18px;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
@@ -1161,11 +1173,11 @@ $(function(){
                             <div class="logo">
                               
                                                 
-                                                    <div class="logo_text"><strong><span style="font-size:36px;"><span style="font-family:montserrat;">Perevoz.ru</span></span></strong></div>
+                                                    <div class="logo_text"><strong><span style="font-size:36px;"><span style="font-family:montserrat;">Perevoz.ru </span></span></strong></div>
                                                 
                                             
                             </div>
-                            <div class="menu1 menu_block animate_menu1" style="color:#333; background-color:#fff; font-size: 16px"><ul><li class="level0"><a href="#a_1691350" title="Главная">Главная</a></li><li class="level0"><a href="#a_1691387" title="О компании">О компании</a></li><li class="level0"><a href="#a_1691400" title="Почему мы">Маршруты и расписание</a></li><li class="level0"><a href="#a_1693999" title="Отзывы">Отзывы</a></li><li class="level0"><a href="#a_1691514" title="Преимущества">Преимущества</a></li><li class="level0"><a href="#a_1691508" title="Галерея">Автопарк</a></li><li class="level0"><a href="#a_1691472" title="Контакты">Контакты</a></li></ul></div>
+                            <div class="menu1 menu_block animate_menu1" style="color:#333; background-color:#fff; font-size: 16px"><ul><li class="level0"><a href="#a_1691350" title="Главная">Главная</a></li><li class="level0"><a href="#a_1691387" title="О компании">О компании</a></li><li class="level0"><a href="#a_1691400" title="Почему мы">Маршруты и расписание</a></li><li class="level0"><a href="#a_1693999" title="Отзывы">Отзывы</a></li><li class="level0"><a href="#a_1691508" title="Галерея">Автопарк</a></li><li class="level0"><a href="#a_1691472" title="Контакты">Контакты</a></li></ul></div>
                         </div>
                         
                     </div>
@@ -1182,7 +1194,7 @@ $(function(){
 								 <div class="sub_title"> <p><span style="font-size:24px"><em></em></span><em><span style="font-size:24px;">Профессиональные водители с отзывами, рейтингами и фото, выгодные цены, разные автомобили. Отличные цены, проверенные машины!</span></em></p></div>
 									  
 									<div class="arr1">
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;  font-size: 16px;  font-family: Verdana, Geneva, sans-serif; ">РАССЧИТАТЬ СТОИМОСТЬ</div>
+												<a href="#a_1691400" title="Почему мы"><div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;  font-size: 16px;  font-family: Verdana, Geneva, sans-serif; ">ЗАБРОНИРОВАТЬ</div></a>
 												
 													<div class="popup_form">
                             <div class="popup_form_inner">
@@ -1239,18 +1251,10 @@ $(function(){
 											<div class="bg_right" style="opacity:1; background: #f5f5f5;"></div>
 											 <div class="title1"><span style="color:#000000"><span style="font-size:32px"><strong><span style="font-family:montserrat">О НАШЕЙ КОМПАНИИ</span></strong></span></span></div>
 											 <div class="txt1"> <p><span style="color:#444444">За несколько лет работы мы осуществили множество поездок  и зарекомендовали себя как одна из лучших транспортных компаний.&nbsp;Мы заботимся о вашем комфорте,создавая максимально безопасные условия поездок. За рулем всегда опытные водители с большим стажем работы, которые подскажут и помогут в случае необходимости. Доставим вас до нужного места назначения без лишних рисков. С нами быстро качественно, комфортно.</span></p></div> 
-												<div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;  font-size: 14px;  font-family: Verdana, Geneva, sans-serif; ">УЗНАТЬ ПОДРОБНЕЕ</div>
+												<a href="#a_1691400" title="Почему мы"><div class="btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;  box-shadow: 0;  font-size: 16px;  font-family: Verdana, Geneva, sans-serif; ">К маршрутам</div></a>
 												
 												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title"><p style="text-align: center;"><span style="font-size:22px;">Запишитесь на встречу с нашим главным архитектором или дизайнером.</span></p></div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Записаться" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
+													
                     </div>
                 
 													<div class="popup_form">
@@ -1279,205 +1283,7 @@ $(function(){
 							</div>
 						</div>
 
-<div class="hide_line  one style_0    section           section132 " style="background-color:#ffffff;  background-image:url(/img/1920x0/null.png); padding-top:40px; padding-bottom:40px;" data-id="1730921" id="b_1730921"><a name="a_1693993"></a>
-							
-                                                        
-                                                        <div class="noise" style="background-image:url(/img/null.png);"></div>
-                                                        <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
-                                                            <div class="section_inner  ">
-								<div class="title"><p style="text-align: left;"><span style="color:#000000;"><span style="font-size:40px"><span style="font-family:montserrat"><strong>ПОЧЕМУ ЕДУТ С НАМИ?</strong></span></span></span></p></div> 
-								<div class="sub_title"><p style="text-align: left;"><span style="color:#696969;"><span style="font-size: 22px;">...</span></span></p><div><span style="color:#696969;"><span style="font-size: 22px;"><br></span></span></div></div>
-								<div class="text" style=" "><p><ul><b>Безопасность</b><li>Каждый автомобиль регулярно проходит техническое обслуживание на СТО, и в случае поломки сразу ремонтируются.<li>Мы несем полную ответственность за вашу безопасность в дороге.</li></li></ul></p><p></p><p><ul><b>Опытные водители</b><li>за рулем профессиональные водители с большим стажем работы в перевозках</li><li>мы проезжаем все пограничные пункты в автомобиле, не нужно проходить пешком</li></ul><p><ul><b>Комфортная поездка</b><li>раскладные кресла с регулировкой наклона спинки, В каждой машине кондиционер, багажник WI-FI и печка для поездок в холодное время года.</li><li>Доступная цена.</li><li>Фиксированая цена, доступная для каждого, которая не поменяется в последний момент</li><li>Удобная регистрация заказа</li>Вы можете сделать заказ по телефону или на сайте. Менеджер обсудит все детали и ответит на вопросы по вашей поездке</ul></p>.&nbsp;</p><p><br></p></div>
-							</div>
-						</div>
 
-<div data-hcolor="#ff6600" class="hide_line         img_square     flex_fix   section     dark      fixed  transparent_ico section130  " style="background-color:#ffffff;  background-image:url(/img/1920x0/cccb193dd29f9521ea4a0ea0fb95ffcf.jpg); padding-top:80px; padding-bottom:80px;" data-id="1730922" id="b_1730922"><a name="a_1694000"></a>
-								<div class="back_dark" style="opacity:0.5; background:linear-gradient(to bottom, #D3BEAB 0% ,#637d8b 100% ) "></div>
-								<div class="dark"></div>
-								<div class="noise" style="background-image:url(/img/null.png);"></div>
-								<div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
-								<div class="section_inner all_border  ">
-								<div class="title"><strong><span style="font-size:48px"><span style="font-family:montserrat">СОТРУДНИКИ НАШЕЙ КОМПАНИИ</span></span></strong></div> 
-								<div class="sub_title"><span style="font-size:22px">Что говорят о нас сотрудники</span><br><br></div>
-								<div class="catalog_items count3 s120">
-								<div class="filter_btns "><button id="descending" data-sort_dir="to_min">Сначала дорогие</button><button id="аscending" data-sort_dir="to_max">Сначала дешевые</button></div>
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.12; background: #637d8b;"></div>
-											
-											
-											
-											<div data-link="" class="image1  s120  radius     "><img  data-lazy='1' data-src="/img/240x240/a92b178bf534541201c49c47812822ed.jpg" alt=""></div>
-											
-											
-											
-											<div class="title1"><span style="font-family:montserrat"><span style="font-size:22px">Гудков Дмитрий</span></span><div><span style="font-family:montserrat"><em>Главный инженер</em></span></div></div>
-											 <div class="txt1"> Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div> 
-											
-												<div class=" hidden btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Узнать подробнее</div>
-												
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s120">
-													<div class="close">Х</div>
-													
-													
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/a92b178bf534541201c49c47812822ed.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_2.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_3.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Узнать подробнее</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.12; background: #637d8b;"></div>
-											
-											
-											
-											<div data-link="" class="image1  s120  radius     "><img  data-lazy='1' data-src="/img/240x240/7fdb1efcf22e5d45f3b9959bd8640bd2.png" alt=""></div>
-											
-											
-											
-											<div class="title1"><span style="font-family:montserrat"><span style="font-size:22px">Хвостовской Андрей</span><br><em>Рабочий специалист</em></span></div>
-											 <div class="txt1"> Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div> 
-											
-												<div class=" hidden btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Узнать подробнее</div>
-												
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s120">
-													<div class="close">Х</div>
-													
-													
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/7fdb1efcf22e5d45f3b9959bd8640bd2.png" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_2.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_3.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Узнать подробнее</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								  
-									<div class="arr1 ">
-										<div class="col_4">
-											<div class="col_bg" style="opacity:0.12; background: #637d8b;"></div>
-											
-											
-											
-											<div data-link="" class="image1  s120  radius     "><img  data-lazy='1' data-src="/img/240x240/bba163e51ddea193fefe9768b8d6bcee.jpg" alt=""></div>
-											
-											
-											
-											<div class="title1"><span style="font-family:montserrat"><span style="font-size:22px">Никаев Игорь</span><br><em>Рабочий специалист</em></span></div>
-											 <div class="txt1"> Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!</div> 
-											
-												<div class=" hidden btn1 surround  " data-hcolor="#3caaf7" style="background-color:#3caaf7;  border-radius: 0em;   box-shadow: 0;     ">Узнать подробнее</div>
-												
-												
-													<div class="popup_form">
-                            <div class="popup_form_inner">
-                                <div class="popup_form_close"></div>
-                                <div class="popup_form_title">Оставить  заявку</div>
-                                <form action="handler.php" enctype="multipart/form-data" method="post">
-                                        <div class="form1"><input type="hidden" name="Название формы" value="">	<div class="field"><div class="field_title ">Введите имя</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div><div class="field"><div class="field_title  ">Введите E-mail</div><div class="field_description"></div><div class="field_input field_input_email"><input type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div><div class="field"><div class="field_title  ">Введите номер телефона</div><div class="field_description"></div><div class="field_input field_input_phone"><input type="text" required="required" pattern="[+)( .-]*[0-9]+[0-9+)( .-]*" minlength="6" name="Введите номер телефона" placeholder="xxx-xxx-xxx"></div></div><div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="Отправить" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ;  "></div></div></div>
-                                </form>
-                                <div class="popup_form_text">Нажимая на кнопку, Вы принимаете <a target="_blank" href="/?personal_data=1">Положение</a> и <a target="_blank" href="/?personal_data=2">Согласие</a> на обработку персональных данных.</div>
-                            </div>
-                    </div>
-                
-												
-											</div>
-											<div class="extra_info_block_wrapper  ">
-												<div class="extra_info_block s120">
-													<div class="close">Х</div>
-													
-													
-													
-													
-													<div class="left"><img  data-lazy='1' data-src="/img/320x320/bba163e51ddea193fefe9768b8d6bcee.jpg" alt="">
-														<div style="display: none;">
-															<img  data-lazy='1' data-src="/img/320x320/image_2.jpg" alt="">
-															<img  data-lazy='1' data-src="/img/320x320/image_3.jpg" alt="">
-														</div>
-														
-													</div>    
-													
-													<div class="right">
-														<div class="extra_info1"><span style="font-size:28px;">Название товара<br></span>Подробное описание продукта.<br>Здесь вы можете расписать:<ul><li>свойства товара,<br type="_moz"></li><li>параметры товара,<br type="_moz"></li><li>описание товара,</li><li>наличие на складе,</li><li>цвет,</li><li>количество.<br></li></ul><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин. <br></p></div>
-														
-														<div class="btn1x surround " style="background-color:#3caaf7; ">Узнать подробнее</div>
-													</div>    
-													<div class="clear"></div>    
-														
-												</div>
-											</div>
-									</div> 
-								
-									<div class="popup_thanks">
-                        <div class="popup_thanks_inner">
-                            <div class="popup_thanks_close">X</div>
-                            <div class="popup_thanks_title">Спасибо за заявку!</div>
-                            <div class="popup_thanks_text">Заявка отправлена. Наш менеджер свяжется с Вами в ближайшее время.</div>
-                        </div>
-                    </div>
-                
-							</div>
-							</div>
-						</div>
 
 <div class="hide_line   section           section138  wide  img_zoom" style="background-color:#ffffff;  background-image:url(/img/1920x0/null.png); padding-top:80px; padding-bottom:80px;" data-id="1730923" id="b_1730923"><a name="a_1691400"></a>
 							
@@ -1485,68 +1291,70 @@ $(function(){
                                                             <div class="noise" style="background-image:url(/img/natural-paper.png);"></div>
                                                            <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
                                                             <div class="section_inner">
-								<div class="title"><p style="text-align:left">ПАССАЖИРСКИЕ ПЕРЕВОЗКИ</p><p style="text-align:left"><span style="font-size:42px"><span style="color:#000000"><strong><span style="font-family:montserrat">Маршруты и расписание</span></strong></span></span></p></div> 
-								<div class="sub_title"><p style="text-align:left"><br></p></div>
+<div class="title"><strong><span style="font-size:48px"><span style="font-family:montserrat">Маршруты и расписание</span></span></strong></div> 								<div class="sub_title"><p style="text-align:left"><br></p></div>
 
     
 
-    <h2>Доступные Направления:
+   <h2>Доступные Направления:
     </h2>
-    <p> ...</p>
+    <p> &nbsp;</p>
     <button class="accordion">Краснодар</button>
     <div class="panel">
-        <p>
+        <p><p>&nbsp;</p>
             <table>
                 <tr>
                     <th>Время</th>
                     <th>Стоимость</th>
+                    <th></th>
 
                     <tr>
                         <td>08:00</td>
                         <td>2500р</td>
+                        <td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
 
                     </tr>
                     <tr>
                         <td>12:00</td>
                         <td>2500р</td>
+                        <td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
 
                     </tr>
                     <tr>
                         <td>20:00</td>
                         <td>2500р</td>
-
+                        <td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
                     </tr>
 
             </table>
-        </p>
+        </p><p>&nbsp;</p>
     </div>
 
     <button class="accordion">Волгоград</button>
     <div class="panel">
-        <p>
+        <p><p>&nbsp;</p>
             <table>
                 <tr>
                     <th>Время</th>
                     <th>Стоимость</th>
-
+<th></th>
                     <tr>
                         <td>18:00</td>
                         <td>2500р</td>
-
+<td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
                     </tr>
                     <tr>
                         <td>22:00</td>
                         <td>2500р</td>
-
+<td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
                     </tr>
                     <tr>
                         <td>06:00</td>
                         <td>2500р</td>
-
+<td class="zakaz"><a href="tel:+79898287471"><button>Заказать</button></a></td>
                     </tr>
 
             </table>
-        </p>
+        </p><p>&nbsp;</p>
     </div>
 
     <button class="accordion">Примечание</button>
@@ -1570,6 +1378,7 @@ $(function(){
             });
         }
     </script>
+
 
 
 						</div>
@@ -1642,20 +1451,19 @@ $(function(){
 						</div>
 
 <div data-hcolor="#ff6600" class="hide_line   hover_animate inner_width     img_square     flex_fix   section             transparent_ico section130  " style="background-color:#f5f5f5;  background-image:url(/img/1920x0/null.png); padding-top:80px; padding-bottom:80px;" data-id="1730926" id="b_1730926"><a name="a_1702995"></a>
+								</div>
+
 								
 								
-								<div class="noise" style="background-image:url(/img/natural-paper.png);"></div>
-								<div class="noise_new " style="background-image:url(/img/bg_13.png); opacity:0.5;"></div>
-								<div class="section_inner all_border  ">
 								
 
-<div class="hide_line  section    square        section143   hold_text  " style="background-color:#fff;  background-image:url(/img/1920x0/null.png); padding-top:60px; padding-bottom:60px;" data-id="1730927" id="b_1730927"><a name="a_1691508"></a>
+<div class="hide_line  section    square        section143   hold_text  " style="  background-image:url(/img/1920x0/null.png); padding-top:60px; padding-bottom:60px;" data-id="1730927" id="b_1730927"><a name="a_1691508"></a>
                         
-                        
+                        <div class="back_dark" style="opacity:0.76; background:linear-gradient(to bottom, #999999 28% ,#212121 100% ) "></div>
                         <div class="noise" style="background-image:url(/img/null.png);"></div>
                          <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
                                <div class="section_inner  width1170 ">
-								<div class="title"><p style="text-align:left"><span style="font-size:26px"><span style="color:#000000"><span style="font-family:montserrat"><strong>Наш Автопарк</strong></span></span></span></p><p style="text-align:left"><span style="font-size:40px"><span style="color:#000000"><span style="font-family:montserrat"></span></span></span></p></div> 
+								<div class="title"><strong><span style="font-size:48px"><span style="font-family:montserrat"><span style="color: rgb(254, 254, 254);"><span style="text-shadow:1px 1px 2px black,0 0 1em black;">Наш Автопарк</span></span></strong></div> 
 								<div class="sub_title"><br></div>
 								<div class="images">
 									  
@@ -1683,143 +1491,14 @@ $(function(){
 												</div>
 											</div>
 									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img8.jpeg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Toyota Majesty</div>
-													<div class="overlay_image_descr">Здесь четыре ряда на десять посадочных мест, «кожаная» обивка, вставки «под дерево» и девять подушек безопасности, включая занавески во всю длину салона. Самые роскошные места — на втором ряду)</div>
-												</div>
-											</div>
-									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img9.jpg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Volkswagen Multivan</div>
-													<div class="overlay_image_descr">Multivan является премиальной версией микроавтобуса Transporter.то отличная вместительная машина, которая у нас используется с водителем для семейных и рабочих задач.</div>
-												</div>
-											</div>
-									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img4.jpg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Ford Tourneo Connect</div>
-													<div class="overlay_image_descr">«Легковой» дизайн, экономичный двигатель и практичный салон.Что еще нужно?</div>
-												</div>
-											</div>
-									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img7.jpg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Временно недоступен</div>
-													<div class="overlay_image_descr"></div>
-												</div>
-											</div>
-									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img5.jpg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Временно недоступен</div>
-													<div class="overlay_image_descr"></div>
-												</div>
-											</div>
-									  
-											<div class="image_box    image_size_600x450 arr1 ">
-												<img  data-lazy='1' alt src="img/img6.jpg" alt="">
-												<div class="overlay_image_box    " data-link="" data-link-target="">
-													<div class="overlay_image_title">Временно недоступен</div>
-													<div class="overlay_image_descr"></div>
-												</div>
-											</div>
+											
 									
 									<div class="clear"></div>
 								</div>
 							</div>
 						</div>
 
-<div data-hcolor="#5d5d5d" class="hide_line   no_fontsize   section             section258 " style="background-color:#ffffff;  background-image:url(/img/1920x0/4081d71046d96d276439bd007fe576b5.jpg);" data-id="1730928" id="b_1730928"><a name="a_1691514"></a>
-							<div class="dark"></div>
-								<div class="back_dark" style="opacity:0.76; background:linear-gradient(to bottom, #999999 28% ,#212121 100% ) "></div>
-								<div class="noise" style="background-image:url(/img/null.png);"></div>
-								 <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
-								<div class="section_inner all_border width1170 ">
-								<div class="title"><div><br></div><div><span style="font-size:28px;"><span style="font-family:montserrat;">МЫ ЖДЕМ ВАС</span></span></div></div> 
-								<div class="sub_title"><span style="font-size:36px"><strong><span style="font-family:montserrat">ПОСЕТИТЕ НАШУ КОМПАНИЮ</span></strong></span></div>
-									<div class="content_block">
-									<div class="form_wrapper  form_bg  " style="color: #ccc; border-color:#ccc;">
-									<div class="form_bg_color" style="opacity:0;"></div>
-									
-										<div class="form_title"><span style="font-size:20px"><span style="color:#FFFFFF">Оставьте заявку</span></span></div>
-										<div class="form_sub_title"></div>
-										<div class="form1">
-												<form action="handler.php" enctype="multipart/form-data" method="post">
-												  
-														<input type="hidden" name="Название формы" value="">	
-												  
-														<div class="field"><div style="color:#ffffff" class="field_title ">Введите имя</div><div style="color:#ffffff" class="field_description"></div><div style="color:#ffffff; border-color: #ffffff" class="field_input field_input_text"><input style="color:#ffffff" type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div>
-												  
-														<div class="field"><div style="color:#ffffff" class="field_title  ">Введите E-mail</div><div style="color:#ffffff" class="field_description"></div><div style="color:#ffffff; border-color: #ffffff" class="field_input field_input_email"><input style="color:#ffffff" type="email" required="required" name="Введите E-mail" placeholder="mail@mail.ru"></div></div>
-												  
-														<div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="ОСТАВИТЬ ЗАЯВКУ" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ; font-size: 20px; "></div></div>
-												
-												</form>
-										</div>
-										<div class="form_text"><span style="color:#FFFFFF;">Нажимая на кнопку, Вы принимаете </span><a target="_blank" data-cke-saved-href="/?personal_data=1" href="/?personal_data=1"><span style="color:#FFFFFF;">Положение</span></a><span style="color:#FFFFFF;"> и </span><a target="_blank" data-cke-saved-href="/?personal_data=2" href="/?personal_data=2"><span style="color:#FFFFFF;">Согласие</span></a><span style="color:#FFFFFF;"> на обработку персональных данных.</span></div>
-									
-								</div>
-                                                                <div class="arr_block">
-								  
-									<div class="arr1">
-										<div class="col_3">
-											<div class="icon_layer">
-												<div class="mdico1 " style="color:#fff;"><i class="md svg-icon-timer1"></i></div>
-												<div class="title1">Преимущества работы с вашей компанией</div>
-												<div class="clear"></div>
-											</div>
-											 <div class="txt1"> <span style="color:#D3D3D3">Подробное описание этого преимущества в идеальном соотношении - это текст в 2 строчки. Так выглядеть текст будет максимально элегантно.</span></div> 
-											
-										</div>
-										<div class="clear"></div>
-									</div> 
-								  
-									<div class="arr1">
-										<div class="col_3">
-											<div class="icon_layer">
-												<div class="mdico1 " style="color:#fff;"><i class="md svg-icon-idea"></i></div>
-												<div class="title1"><span style="color:#FFFFFF"><span style="font-size:22px"></span></span>Еще преимущества работы с вами<span style="color:#FFFFFF"><span style="font-size:22px"></span></span></div>
-												<div class="clear"></div>
-											</div>
-											 <div class="txt1"> <span style="color:#D3D3D3">Подробное описание этого преимущества в идеальном соотношении - это текст в 2 строчки. Так выглядеть текст будет максимально элегантно.</span></div> 
-											
-										</div>
-										<div class="clear"></div>
-									</div> 
-								  
-									<div class="arr1">
-										<div class="col_3">
-											<div class="icon_layer">
-												<div class="mdico1 " style="color:#fff;"><i class="md svg-icon-404-error"></i></div>
-												<div class="title1">Еще одно преимущества работы с вами</div>
-												<div class="clear"></div>
-											</div>
-											 <div class="txt1"> <span style="color:#D3D3D3">Подробное описание этого преимущества в идеальном соотношении - это текст в 2 строчки. Так выглядеть текст будет максимально элегантно.</span></div> 
-											
-										</div>
-										<div class="clear"></div>
-									</div> 
-								
-                                                                </div> 
-                                                            <div class="clear"></div>
-							</div>
-                                            <div class="popup_thanks">
-                        <div class="popup_thanks_inner">
-                            <div class="popup_thanks_close">X</div>
-                            <div class="popup_thanks_title">Спасибо за заявку!</div>
-                            <div class="popup_thanks_text">Заявка отправлена. Наш менеджер свяжется с Вами в ближайшее время.</div>
-                        </div>
-                    </div>
-                
-							</div>
-						</div>
+
 
 <div data-hcolor="#ff6600" class="hide_line    section            section125  " style="background-color:#ffffff;  background-image:url(/img/1920x0/null.png); padding-top:80px; padding-bottom:80px;" data-id="1730929" id="b_1730929"><a name="a_1693999"></a>
 							
@@ -1967,44 +1646,75 @@ $(function(){
 							</div>
 						</div>
 
-<div data-hcolor="#5d5d5d" class=" size_900x700 hide_line   section      no_image       section1121 " style="background-color:#f8f8f8;  background-image:url(/img/1920x0/image_7141.jpg); padding-top:80px; padding-bottom:80px;" data-id="1730931" id="b_1730931"><a name="a_1691472"></a>
-							<div class="back_dark" style="opacity:0.96; background:linear-gradient(to bottom, #ffffff 0% ,#ffffff 100% ) "></div>
-								
-							    <div class="noise" style="background-image:url(/img/natural-paper.png);"></div>
-							    <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
-								<div class="section_inner all_border ">
-									<div class="wrapp ">
-											<div class="image1   size_900x700"><img  data-lazy='1' data-src="/img/900x700/cc7de18a928b8430cbffbf738d8fb256.jpg" alt=""></div>
-											<div class="form_wrapp">
-												<div class="title"><p><span style="font-size:40px;"><span style="color:#000000;"><span style="font-family:montserrat;"><strong>СВЯЖИТЕСЬ С НАМИ</strong></span></span></span></p></div> 
-												<div class="sub_title"><span style="font-family:montserrat;"><span style="font-size:22px;"><span style="color:#000000">Оставьте заявку прямо на сайте</span></span></span></div>
-											<div class="form1">
-												<form action="handler.php" enctype="multipart/form-data" method="post">
-												  
-														<input type="hidden" name="Название формы" value="">	
-												  
-														<div class="field"><div style="color:#000000" class="field_title ">Введите имя</div><div style="color:#000000" class="field_description"></div><div style="color:#000000; border-color: #000000" class="field_input field_input_text"><input style="color:#000000" type="text" required="required" name="Введите имя" placeholder="Введите имя"></div></div>
-												  
-														<div class="field"><div style="color:#000000" class="field_title  ">Введите E-mail</div><div style="color:#000000" class="field_description"></div><div style="color:#000000; border-color: #000000" class="field_input field_input_email"><input style="color:#000000" type="email" required="required" name="Введите E-mail" placeholder="Введите email"></div></div>
-												  
-														<div class="field"><div class="field_title ">Ваш комментарий или вопрос</div><div class="field_description"></div><div class="field_input field_input_text"><input type="text" name="Ваш комментарий или вопрос" placeholder="Например, сколько будет стоить дизайн-проект квартиры 85 кв м."></div></div>
-												  
-														<div class="field"><div class="field_input"><input type="submit" class="submit_btn surround" data-hcolor="#3caaf7" data-action="thanks" data-metrica_event="undefined" data-fb_pixel="undefined" data-vk_pixel="undefined" data-url="" data-amount="0" data-product_name="undefined" value="ОСТАВИТЬ ЗАЯВКУ" style="background-color:#3caaf7;    border-radius: 0em; ;  box-shadow: 0; ; font-size: 16px; "></div></div>
-												
-												</form>
-											</div>
-											</div>
-									</div> 
-								<div class="popup_thanks">
-                        <div class="popup_thanks_inner">
-                            <div class="popup_thanks_close">X</div>
-                            <div class="popup_thanks_title">Спасибо за заявку!</div>
-                            <div class="popup_thanks_text">Заявка отправлена. Наш менеджер свяжется с Вами в ближайшее время.</div>
-                        </div>
-                    </div>
+<div data-hcolor="#5d5d5d" class="hide_line   no_fontsize   section             section258 " style="background-color:#ffffff;  background-image:url(/img/1920x0/4081d71046d96d276439bd007fe576b5.jpg);" data-id="1730931" id="b_1730931"><a name="a_1691472"></a>
+    <div class="dark"></div>
+        <div class="back_dark" style="opacity:0.76; background:linear-gradient(to bottom, #999999 28% ,#212121 100% ) "></div>
+        <div class="noise" style="background-image:url(/img/null.png);"></div>
+         <div class="noise_new " style="background-image:url(/img/null.png); opacity:0.5;"></div>
+        <div class="section_inner all_border width1170 ">
+        <div class="title"><div><br></div><div><span style="font-size:28px;"><span style="font-family:montserrat;"></span></span></div></div> 
+<div class="title"><strong><span style="font-size:48px"><span style="font-family:montserrat"><span style="color: rgb(254, 254, 254);"><span style="text-shadow:1px 1px 2px black,0 0 1em black;"><center>КАК С НАМИ СВЯЗАТЬСЯ?</center></span></span></strong></div>            <div class="content_block">
+            
+            <div class="form_bg_color" style="opacity:0;"></div>
+            
                 
-							</div>
-						</div>
+                <div class="form_text"><span style="color:#FFFFFF;"></span><a target="_blank" data-cke-saved-href="/?personal_data=1" href="/?personal_data=1"><span style="color:#FFFFFF;"></span></a><span style="color:#FFFFFF;">  </span><a target="_blank" data-cke-saved-href="/?personal_data=2" href="/?personal_data=2"><span style="color:#FFFFFF;"></span></a><span style="color:#FFFFFF;"> </span></div>
+            
+        </div>
+                                        <div class="arr_block">
+          
+            <div class="arr1">
+                <div class="col_3">
+                    <div class="icon_layer">
+                        <div class="mdico1 " style="color:#fff;"><img   src="img/tel.svg" alt=""></i></div>
+                        <div class="title1"><a href="tel:+79898287471">Позвоните нам</a></div>
+                        <div class="clear"></div>
+                    </div>
+                     <div class="txt1"> <span style="color:#D3D3D3"></span></div> 
+                    
+                </div>
+                <div class="clear"></div>
+            </div> 
+          
+            <div class="arr1">
+                <div class="col_3">
+                    <div class="icon_layer">
+                        <div class="mdico1 " style="color:#fff;"><img   src="img/whats.png" alt=""></i></div>
+                        <div class="title1"><span style="color:#FFFFFF"><span style="font-size:22px"></span></span><a href="https://wa.me/+79898287471">Напишите нам</a><span style="color:#FFFFFF"><span style="font-size:22px"></span></span></div>
+                        <div class="clear"></div>
+                    </div>
+                     <div class="txt1"> <span style="color:#D3D3D3">...</span></div> 
+                    
+                </div>
+                <div class="clear"></div>
+            </div> 
+          
+            <div class="arr1">
+                <div class="col_3">
+                    <div class="icon_layer">
+                        
+                        <div class="title1">Мы в социальных сетях</div>
+                        <div class="clear"></div>
+                    </div>
+                     <div class="txt1"> <span style="color:#D3D3D3"><a href="https://www.instagram.com/"><img src="" alt=""><img src="img/insta.png"</a><a href="https://vk.com/feed"><img src="" alt=""><img src="img/vk.png"</a></span></div> 
+                    
+                </div>
+                <div class="clear"></div>
+            </div> 
+        
+                                        </div> 
+                                    <div class="clear"></div>
+    </div>
+                    <div class="popup_thanks">
+<div class="popup_thanks_inner">
+    <div class="popup_thanks_close">X</div>
+    <div class="popup_thanks_title">Спасибо за заявку!</div>
+    <div class="popup_thanks_text">Заявка отправлена. Наш менеджер свяжется с Вами в ближайшее время.</div>
+</div>
+</div>
+
+    </div>
+</div>
 
 <div class="hide_line    section             section109  " style="background-color:#eaeaea;  background-image:url(/img/1920x0/null.png);" data-id="1730932" id="b_1730932"><a name="a_1693992"></a>
                                     
